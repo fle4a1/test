@@ -48,12 +48,15 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Extract repository name
+      id: extract-repo
+      run: echo "REPO_NAME=$(echo ${GITHUB_REPOSITORY} | cut -d'/' -f2)" >> $GITHUB_ENV
     - name: Execute deployment script via SSH
       env:
         SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
         SSH_IP: ${{ secrets.SSH_IP }}
         CI_COMMIT_BRANCH: ${{ github.ref_name }}
-        WORKDIR: test
+        WORKDIR: ${{ env.REPO_NAME }}
       run: |
         apt-get update && apt-get install -y sshpass
         sshpass -p $SSH_PASSWORD ssh -o StrictHostKeyChecking=no root@$SSH_IP << EOF
@@ -61,7 +64,6 @@ jobs:
           git pull
           git checkout $CI_COMMIT_BRANCH
           git pull origin $CI_COMMIT_BRANCH
-          docker compose down
-          docker compose up -d
+          echo "1"
         EOF
 
