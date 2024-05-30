@@ -39,4 +39,4 @@ jobs:
         docker compose -f deploy/docker/docker-compose.yaml up -d
 
     - name: Shutdown Docker Compose
-      run: docker-compose down
+      run: docker compose -f deploy/docker/docker-compose.yaml down

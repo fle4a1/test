@@ -1,6 +1,6 @@
 FROM python:3.12-slim
 
-EXPOSE 5000
+EXPOSE 7070
 
 WORKDIR /project
 
@@ -14,8 +14,9 @@ RUN mkdir -p -m 0600 ~/.ssh && ssh-keyscan github.com >> ~/.ssh/known_hosts
 RUN pip install poetry
 
 COPY pyproject.toml poetry.lock* ./
-RUN --mount=type=ssh poetry install --only scheduler
+RUN --mount=type=ssh poetry install --with scheduler
 COPY app app
+RUN mkdir logs
 RUN mkdir schedules
 
-CMD ["python", "app/main.py"]
+CMD ["sh", "-c", "aerich init-db && aerich upgrade && python app/main.py scheduler"]
