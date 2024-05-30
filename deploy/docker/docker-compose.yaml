@@ -14,23 +14,22 @@ services:
       POSTGRES_DB: postgres
     volumes:
       - ./temp/compose/postgres:/var/lib/postgresql/data
-    networks:
-      - backend
 
   redis:
     image: redis:7
     container_name: redis_schedule_api
+    restart: always
     ports:
       - "${REDIS_PORT:-6501}:6379"
     volumes:
       - ./temp/compose/redis:/data
-    networks:
-      - backend
 
   schedule-api:
     build:
-      dockerfile: api.Dockerfile
+      dockerfile: deploy/docker/api.Dockerfile
       context: ../../
+      ssh:
+        default: $SSH_AUTH_SOCK
     container_name: schedule-api
     ports:
       - "${API_PORT:-6502}:7070"
@@ -43,35 +42,3 @@ services:
       PYTHONPATH: "/project/app"
     depends_on:
       - postgres
-    networks:
-      - backend
-
-  scheduler:
-    build:
-      dockerfile: scheduler.Dockerfile
-      context: ../../
-      ssh:
-        default: $SSH_AUTH_SOCK
-    container_name: scheduler
-    ports:
-      - "${SCHEDULER_PORT:-6503}:5000"
-    volumes:
-      - ./temp/compose/scheduler:/data
-    environment:
-      PYTHONDONTWRITEBYTECODE: 1
-      PYTHONUNBUFFERED: 1
-      POETRY_VIRTUALENVS_CREATE: false
-      PYTHONPATH: "/project/app"
-    depends_on:
-      - postgres
-      - redis
-    networks:
-      - backend
-
-networks:
-  backend:
-    driver: bridge
-    ipam:
-    config:
-      - subnet: 10.5.0.0/16
-        gateway: 10.5.0.1
