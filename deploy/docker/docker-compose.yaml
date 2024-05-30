@@ -1,0 +1,77 @@
+---
+version: '3.8'
+services:
+  postgres:
+    image: postgres:15
+    container_name: postgres_schedule_api
+    ports:
+      - '${POSTGRES_PORT:-6500}:5432'
+    restart: always
+    environment:
+      PGUSER: user
+      POSTGRES_PASSWORD: pass
+      POSTGRES_USER: user
+      POSTGRES_DB: postgres
+    volumes:
+      - ./temp/compose/postgres:/var/lib/postgresql/data
+    networks:
+      - backend
+
+  redis:
+    image: redis:7
+    container_name: redis_schedule_api
+    ports:
+      - "${REDIS_PORT:-6501}:6379"
+    volumes:
+      - ./temp/compose/redis:/data
+    networks:
+      - backend
+
+  schedule-api:
+    build:
+      dockerfile: api.Dockerfile
+      context: ../../
+    container_name: schedule-api
+    ports:
+      - "${API_PORT:-6502}:7070"
+    volumes:
+      - ./temp/compose/api:/data
+    environment:
+      PYTHONDONTWRITEBYTECODE: 1
+      PYTHONUNBUFFERED: 1
+      POETRY_VIRTUALENVS_CREATE: false
+      PYTHONPATH: "/project/app"
+    depends_on:
+      - postgres
+    networks:
+      - backend
+
+  scheduler:
+    build:
+      dockerfile: scheduler.Dockerfile
+      context: ../../
+      ssh:
+        default: $SSH_AUTH_SOCK
+    container_name: scheduler
+    ports:
+      - "${SCHEDULER_PORT:-6503}:5000"
+    volumes:
+      - ./temp/compose/scheduler:/data
+    environment:
+      PYTHONDONTWRITEBYTECODE: 1
+      PYTHONUNBUFFERED: 1
+      POETRY_VIRTUALENVS_CREATE: false
+      PYTHONPATH: "/project/app"
+    depends_on:
+      - postgres
+      - redis
+    networks:
+      - backend
+
+networks:
+  backend:
+    driver: bridge
+    ipam:
+    config:
+      - subnet: 10.5.0.0/16
+        gateway: 10.5.0.1

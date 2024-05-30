@@ -1,0 +1,24 @@
+---
+DEBUG: false
+
+POSTGRES_PASSWORD: pass
+POSTGRES_USER: user
+POSTGRES_DB: postgres
+POSTGRES_HOST: postgres
+POSTGRES_PORT: 5432
+
+REDIS_HOST: redis
+REDIS_PORT: 6379
+REDIS_DB: 0
+
+EOS_URL: 'https://edu.stankin.ru'
+EOS_LOGIN_PATH: 'login/'
+EOS_SCHEDULE_PATH: course/view.php?id=11557
+EOS_USERNAME: guest
+EOS_PASSWORD: guest
+EOS_PATTERN_PATH: 'mod/folder/'
+EOS_SCHEDULE_CHECK_TIME: '03:00'
+
+SECRET_KEY: 'key'
+ALGORITHM: 'HS256'
+SUPERTOKEN: 'examplesupertoken'

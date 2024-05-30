@@ -1,0 +1,1 @@
+from external.scheduler.tasks.fetch_task import fetch_urls

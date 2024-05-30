@@ -1,0 +1,208 @@
+[2024-03-16 13:52:00.340] Traceback (most recent call last):
+  File "/home/fle4a/.cache/pypoetry/virtualenvs/schedule-api-y7vjR7_M-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 738, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fle4a/schedule-api/app/initializer.py", line 36, in initialize
+    validate_config(config)
+  File "/home/fle4a/schedule-api/app/internal/core/settings/validators.py", line 25, in validate_config
+    raise NameError(errors)
+NameError: ['SECRET_KEY', 'ALGORITHM', 'SUPERTOKEN', 'EOS_URL', 'EOS_LOGIN_PATH', 'EOS_PATTERN_PATH', 'EOS_SCHEDULE_PATH', 'EOS_USERNAME', 'EOS_PASSWORD', 'POSTGRES_DB', 'POSTGRES_USER', 'POSTGRES_PASSWORD', 'POSTGRES_HOST', 'POSTGRES_PORT', 'REDIS_HOST', 'REDIS_PORT', 'REDIS_DB']
+
+[2024-03-16 13:52:00.340] Application startup failed. Exiting.
+[2024-03-16 13:52:00.340] Traceback (most recent call last):
+  File "/home/fle4a/.cache/pypoetry/virtualenvs/schedule-api-y7vjR7_M-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 738, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fle4a/schedule-api/app/initializer.py", line 36, in initialize
+    validate_config(config)
+  File "/home/fle4a/schedule-api/app/internal/core/settings/validators.py", line 25, in validate_config
+    raise NameError(errors)
+NameError: ['SECRET_KEY', 'ALGORITHM', 'SUPERTOKEN', 'EOS_URL', 'EOS_LOGIN_PATH', 'EOS_PATTERN_PATH', 'EOS_SCHEDULE_PATH', 'EOS_USERNAME', 'EOS_PASSWORD', 'POSTGRES_DB', 'POSTGRES_USER', 'POSTGRES_PASSWORD', 'POSTGRES_HOST', 'POSTGRES_PORT', 'REDIS_HOST', 'REDIS_PORT', 'REDIS_DB']
+
+[2024-03-16 13:52:00.340] Application startup failed. Exiting.
+[2024-03-16 13:52:00.340] Traceback (most recent call last):
+  File "/home/fle4a/.cache/pypoetry/virtualenvs/schedule-api-y7vjR7_M-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 738, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fle4a/schedule-api/app/initializer.py", line 36, in initialize
+    validate_config(config)
+  File "/home/fle4a/schedule-api/app/internal/core/settings/validators.py", line 25, in validate_config
+    raise NameError(errors)
+NameError: ['SECRET_KEY', 'ALGORITHM', 'SUPERTOKEN', 'EOS_URL', 'EOS_LOGIN_PATH', 'EOS_PATTERN_PATH', 'EOS_SCHEDULE_PATH', 'EOS_USERNAME', 'EOS_PASSWORD', 'POSTGRES_DB', 'POSTGRES_USER', 'POSTGRES_PASSWORD', 'POSTGRES_HOST', 'POSTGRES_PORT', 'REDIS_HOST', 'REDIS_PORT', 'REDIS_DB']
+
+[2024-03-16 13:52:00.340] Application startup failed. Exiting.
+[2024-03-16 13:52:00.341] Traceback (most recent call last):
+  File "/home/fle4a/.cache/pypoetry/virtualenvs/schedule-api-y7vjR7_M-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 738, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fle4a/schedule-api/app/initializer.py", line 36, in initialize
+    validate_config(config)
+  File "/home/fle4a/schedule-api/app/internal/core/settings/validators.py", line 25, in validate_config
+    raise NameError(errors)
+NameError: ['SECRET_KEY', 'ALGORITHM', 'SUPERTOKEN', 'EOS_URL', 'EOS_LOGIN_PATH', 'EOS_PATTERN_PATH', 'EOS_SCHEDULE_PATH', 'EOS_USERNAME', 'EOS_PASSWORD', 'POSTGRES_DB', 'POSTGRES_USER', 'POSTGRES_PASSWORD', 'POSTGRES_HOST', 'POSTGRES_PORT', 'REDIS_HOST', 'REDIS_PORT', 'REDIS_DB']
+
+[2024-03-16 13:52:00.342] Traceback (most recent call last):
+  File "/home/fle4a/.cache/pypoetry/virtualenvs/schedule-api-y7vjR7_M-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 738, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fle4a/schedule-api/app/initializer.py", line 36, in initialize
+    validate_config(config)
+  File "/home/fle4a/schedule-api/app/internal/core/settings/validators.py", line 25, in validate_config
+    raise NameError(errors)
+NameError: ['SECRET_KEY', 'ALGORITHM', 'SUPERTOKEN', 'EOS_URL', 'EOS_LOGIN_PATH', 'EOS_PATTERN_PATH', 'EOS_SCHEDULE_PATH', 'EOS_USERNAME', 'EOS_PASSWORD', 'POSTGRES_DB', 'POSTGRES_USER', 'POSTGRES_PASSWORD', 'POSTGRES_HOST', 'POSTGRES_PORT', 'REDIS_HOST', 'REDIS_PORT', 'REDIS_DB']
+
+[2024-03-16 13:52:00.342] Application startup failed. Exiting.
+[2024-03-16 13:52:00.342] Application startup failed. Exiting.
+[2024-03-16 13:52:00.344] Traceback (most recent call last):
+  File "/home/fle4a/.cache/pypoetry/virtualenvs/schedule-api-y7vjR7_M-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 738, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fle4a/schedule-api/app/initializer.py", line 36, in initialize
+    validate_config(config)
+  File "/home/fle4a/schedule-api/app/internal/core/settings/validators.py", line 25, in validate_config
+    raise NameError(errors)
+NameError: ['SECRET_KEY', 'ALGORITHM', 'SUPERTOKEN', 'EOS_URL', 'EOS_LOGIN_PATH', 'EOS_PATTERN_PATH', 'EOS_SCHEDULE_PATH', 'EOS_USERNAME', 'EOS_PASSWORD', 'POSTGRES_DB', 'POSTGRES_USER', 'POSTGRES_PASSWORD', 'POSTGRES_HOST', 'POSTGRES_PORT', 'REDIS_HOST', 'REDIS_PORT', 'REDIS_DB']
+
+[2024-03-16 13:52:00.344] Application startup failed. Exiting.
+[2024-03-16 13:52:00.346] Traceback (most recent call last):
+  File "/home/fle4a/.cache/pypoetry/virtualenvs/schedule-api-y7vjR7_M-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 738, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fle4a/schedule-api/app/initializer.py", line 36, in initialize
+    validate_config(config)
+  File "/home/fle4a/schedule-api/app/internal/core/settings/validators.py", line 25, in validate_config
+    raise NameError(errors)
+NameError: ['SECRET_KEY', 'ALGORITHM', 'SUPERTOKEN', 'EOS_URL', 'EOS_LOGIN_PATH', 'EOS_PATTERN_PATH', 'EOS_SCHEDULE_PATH', 'EOS_USERNAME', 'EOS_PASSWORD', 'POSTGRES_DB', 'POSTGRES_USER', 'POSTGRES_PASSWORD', 'POSTGRES_HOST', 'POSTGRES_PORT', 'REDIS_HOST', 'REDIS_PORT', 'REDIS_DB']
+
+[2024-03-16 13:52:00.346] Application startup failed. Exiting.
+[2024-03-16 13:52:00.353] Traceback (most recent call last):
+  File "/home/fle4a/.cache/pypoetry/virtualenvs/schedule-api-y7vjR7_M-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 738, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fle4a/schedule-api/app/initializer.py", line 36, in initialize
+    validate_config(config)
+  File "/home/fle4a/schedule-api/app/internal/core/settings/validators.py", line 25, in validate_config
+    raise NameError(errors)
+NameError: ['SECRET_KEY', 'ALGORITHM', 'SUPERTOKEN', 'EOS_URL', 'EOS_LOGIN_PATH', 'EOS_PATTERN_PATH', 'EOS_SCHEDULE_PATH', 'EOS_USERNAME', 'EOS_PASSWORD', 'POSTGRES_DB', 'POSTGRES_USER', 'POSTGRES_PASSWORD', 'POSTGRES_HOST', 'POSTGRES_PORT', 'REDIS_HOST', 'REDIS_PORT', 'REDIS_DB']
+
+[2024-03-16 13:52:00.353] Application startup failed. Exiting.
+[2024-03-16 13:52:00.353] Traceback (most recent call last):
+  File "/home/fle4a/.cache/pypoetry/virtualenvs/schedule-api-y7vjR7_M-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 738, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fle4a/schedule-api/app/initializer.py", line 36, in initialize
+    validate_config(config)
+  File "/home/fle4a/schedule-api/app/internal/core/settings/validators.py", line 25, in validate_config
+    raise NameError(errors)
+NameError: ['SECRET_KEY', 'ALGORITHM', 'SUPERTOKEN', 'EOS_URL', 'EOS_LOGIN_PATH', 'EOS_PATTERN_PATH', 'EOS_SCHEDULE_PATH', 'EOS_USERNAME', 'EOS_PASSWORD', 'POSTGRES_DB', 'POSTGRES_USER', 'POSTGRES_PASSWORD', 'POSTGRES_HOST', 'POSTGRES_PORT', 'REDIS_HOST', 'REDIS_PORT', 'REDIS_DB']
+
+[2024-03-16 13:52:00.353] Application startup failed. Exiting.
+[2024-03-16 13:52:00.354] Traceback (most recent call last):
+  File "/home/fle4a/.cache/pypoetry/virtualenvs/schedule-api-y7vjR7_M-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 738, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fle4a/schedule-api/app/initializer.py", line 36, in initialize
+    validate_config(config)
+  File "/home/fle4a/schedule-api/app/internal/core/settings/validators.py", line 25, in validate_config
+    raise NameError(errors)
+NameError: ['SECRET_KEY', 'ALGORITHM', 'SUPERTOKEN', 'EOS_URL', 'EOS_LOGIN_PATH', 'EOS_PATTERN_PATH', 'EOS_SCHEDULE_PATH', 'EOS_USERNAME', 'EOS_PASSWORD', 'POSTGRES_DB', 'POSTGRES_USER', 'POSTGRES_PASSWORD', 'POSTGRES_HOST', 'POSTGRES_PORT', 'REDIS_HOST', 'REDIS_PORT', 'REDIS_DB']
+
+[2024-03-16 13:52:00.354] Traceback (most recent call last):
+  File "/home/fle4a/.cache/pypoetry/virtualenvs/schedule-api-y7vjR7_M-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 738, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fle4a/schedule-api/app/initializer.py", line 36, in initialize
+    validate_config(config)
+  File "/home/fle4a/schedule-api/app/internal/core/settings/validators.py", line 25, in validate_config
+    raise NameError(errors)
+NameError: ['SECRET_KEY', 'ALGORITHM', 'SUPERTOKEN', 'EOS_URL', 'EOS_LOGIN_PATH', 'EOS_PATTERN_PATH', 'EOS_SCHEDULE_PATH', 'EOS_USERNAME', 'EOS_PASSWORD', 'POSTGRES_DB', 'POSTGRES_USER', 'POSTGRES_PASSWORD', 'POSTGRES_HOST', 'POSTGRES_PORT', 'REDIS_HOST', 'REDIS_PORT', 'REDIS_DB']
+
+[2024-03-16 13:52:00.354] Application startup failed. Exiting.
+[2024-03-16 13:52:00.354] Application startup failed. Exiting.
+[2024-03-16 13:52:00.355] Traceback (most recent call last):
+  File "/home/fle4a/.cache/pypoetry/virtualenvs/schedule-api-y7vjR7_M-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 738, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fle4a/schedule-api/app/initializer.py", line 36, in initialize
+    validate_config(config)
+  File "/home/fle4a/schedule-api/app/internal/core/settings/validators.py", line 25, in validate_config
+    raise NameError(errors)
+NameError: ['SECRET_KEY', 'ALGORITHM', 'SUPERTOKEN', 'EOS_URL', 'EOS_LOGIN_PATH', 'EOS_PATTERN_PATH', 'EOS_SCHEDULE_PATH', 'EOS_USERNAME', 'EOS_PASSWORD', 'POSTGRES_DB', 'POSTGRES_USER', 'POSTGRES_PASSWORD', 'POSTGRES_HOST', 'POSTGRES_PORT', 'REDIS_HOST', 'REDIS_PORT', 'REDIS_DB']
+
+[2024-03-16 13:52:00.355] Traceback (most recent call last):
+  File "/home/fle4a/.cache/pypoetry/virtualenvs/schedule-api-y7vjR7_M-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 738, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fle4a/schedule-api/app/initializer.py", line 36, in initialize
+    validate_config(config)
+  File "/home/fle4a/schedule-api/app/internal/core/settings/validators.py", line 25, in validate_config
+    raise NameError(errors)
+NameError: ['SECRET_KEY', 'ALGORITHM', 'SUPERTOKEN', 'EOS_URL', 'EOS_LOGIN_PATH', 'EOS_PATTERN_PATH', 'EOS_SCHEDULE_PATH', 'EOS_USERNAME', 'EOS_PASSWORD', 'POSTGRES_DB', 'POSTGRES_USER', 'POSTGRES_PASSWORD', 'POSTGRES_HOST', 'POSTGRES_PORT', 'REDIS_HOST', 'REDIS_PORT', 'REDIS_DB']
+
+[2024-03-16 13:52:00.355] Application startup failed. Exiting.
+[2024-03-16 13:52:00.355] Application startup failed. Exiting.
+[2024-03-16 13:52:00.356] Traceback (most recent call last):
+  File "/home/fle4a/.cache/pypoetry/virtualenvs/schedule-api-y7vjR7_M-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 738, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fle4a/schedule-api/app/initializer.py", line 36, in initialize
+    validate_config(config)
+  File "/home/fle4a/schedule-api/app/internal/core/settings/validators.py", line 25, in validate_config
+    raise NameError(errors)
+NameError: ['SECRET_KEY', 'ALGORITHM', 'SUPERTOKEN', 'EOS_URL', 'EOS_LOGIN_PATH', 'EOS_PATTERN_PATH', 'EOS_SCHEDULE_PATH', 'EOS_USERNAME', 'EOS_PASSWORD', 'POSTGRES_DB', 'POSTGRES_USER', 'POSTGRES_PASSWORD', 'POSTGRES_HOST', 'POSTGRES_PORT', 'REDIS_HOST', 'REDIS_PORT', 'REDIS_DB']
+
+[2024-03-16 13:52:00.356] Application startup failed. Exiting.
+[2024-03-16 13:52:00.375] Traceback (most recent call last):
+  File "/home/fle4a/.cache/pypoetry/virtualenvs/schedule-api-y7vjR7_M-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 738, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fle4a/schedule-api/app/initializer.py", line 36, in initialize
+    validate_config(config)
+  File "/home/fle4a/schedule-api/app/internal/core/settings/validators.py", line 25, in validate_config
+    raise NameError(errors)
+NameError: ['SECRET_KEY', 'ALGORITHM', 'SUPERTOKEN', 'EOS_URL', 'EOS_LOGIN_PATH', 'EOS_PATTERN_PATH', 'EOS_SCHEDULE_PATH', 'EOS_USERNAME', 'EOS_PASSWORD', 'POSTGRES_DB', 'POSTGRES_USER', 'POSTGRES_PASSWORD', 'POSTGRES_HOST', 'POSTGRES_PORT', 'REDIS_HOST', 'REDIS_PORT', 'REDIS_DB']
+
+[2024-03-16 13:52:00.375] Application startup failed. Exiting.
+[2024-03-16 13:52:00.385] Traceback (most recent call last):
+  File "/home/fle4a/.cache/pypoetry/virtualenvs/schedule-api-y7vjR7_M-py3.12/lib/python3.12/site-packages/starlette/routing.py", line 738, in lifespan
+    async with self.lifespan_context(app) as maybe_state:
+  File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+    return await anext(self.gen)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "/home/fle4a/schedule-api/app/initializer.py", line 36, in initialize
+    validate_config(config)
+  File "/home/fle4a/schedule-api/app/internal/core/settings/validators.py", line 25, in validate_config
+    raise NameError(errors)
+NameError: ['SECRET_KEY', 'ALGORITHM', 'SUPERTOKEN', 'EOS_URL', 'EOS_LOGIN_PATH', 'EOS_PATTERN_PATH', 'EOS_SCHEDULE_PATH', 'EOS_USERNAME', 'EOS_PASSWORD', 'POSTGRES_DB', 'POSTGRES_USER', 'POSTGRES_PASSWORD', 'POSTGRES_HOST', 'POSTGRES_PORT', 'REDIS_HOST', 'REDIS_PORT', 'REDIS_DB']
+
+[2024-03-16 13:52:00.386] Application startup failed. Exiting.
